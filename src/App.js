@@ -1,8 +1,14 @@
 import React from 'react';
+import Header from './Header';
+import Card from './Card';
+import './data.js';
 
 const App = () => {
   return (
-    <h1> TESTING </h1>
+    <div className="container">
+      <Header />
+      <Card />
+    </div>
   )
 }
 
