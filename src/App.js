@@ -1,13 +1,20 @@
 import React from 'react';
 import Header from './Header';
 import Card from './Card';
-import './data.js';
+import tripData from './data.js';
 
 const App = () => {
+
+  const allTrips = tripData.map( trip => {
+    return(
+      <Card key={trip.id} {...trip} />
+      )
+  })
+
   return (
     <div className="container">
       <Header />
-      <Card />
+      {allTrips}
     </div>
   )
 }

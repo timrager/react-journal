@@ -46,9 +46,18 @@ svg {
 }
 
 .card {
-  width: 471px;
-  height: 168px;
+  display: flex;
   margin: 40px;
   border: 1px solid gainsboro;
   border-radius: 2%;
+}
+
+img {
+  max-width: 125px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  display: flex;
 }
