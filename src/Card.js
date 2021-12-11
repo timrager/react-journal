@@ -10,13 +10,13 @@ const Card = (props) => {
                 <img src={props.imageUrl} />
                 <div className="card-info">
                     <div className="card-title">
-                        <p>{props.location}</p>
-                        <p>{props.googleMapsUrl}</p>
+                        <p className="card-country"><i class="fas fa-map-marker-alt"></i> {props.location}</p>
+                        <p className="card-map"><a href={props.googleMapsUrl}>View on Google Maps</a></p>
                     </div>
-                    <p>{props.title}</p>
-                    <p>{props.startDate}</p>
-                    <p>{props.endDate}</p>
-                    <p>{props.description}</p>
+                    <p className="card-location">{props.title}</p>
+                    <p className="card-date">{props.startDate} - </p>
+                    <p className="card-date">{props.endDate}</p>
+                    <p className="card-desc">{props.description}</p>
                 </div>
             </div>
         </div>
